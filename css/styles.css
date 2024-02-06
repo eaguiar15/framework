@@ -191,4 +191,62 @@ body {
 .path{
    font-size:11px;
    margin-left:10px;
+   white-space: nowrap;
 }
+
+.alert {
+  position: relative;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px
+}
+
+.alert i{
+    margin-right:10px;
+}
+
+.alert-success{
+  background-color: #ddf4ff;
+  border: 1px solid #a3daff;
+}
+
+.alert-success i {
+  color: #3183e1; /* Cor do ícone de alerta */
+}
+
+.alert-warning {
+  background-color: #fff3cd; 
+  border: 1px solid #ffeeba;
+}
+
+.alert-warning i{
+  color: gold;
+}
+
+.alert-danger {
+  background-color: #f8d7da; 
+  border: 1px solid #f5c6cb;
+}
+
+.alert-danger i{
+  color: #fd8c97;
+}
+
+.alert-info {
+  background-color: #e2e3e5; /* Cor de fundo para informação */
+  border: 1px solid #d3d6db;
+}
+
+.alert-info i{
+  color: gray;
+}
+
+.alert-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
