@@ -1,80 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-  <title>CSS Grid Example</title>
-</head> 
-<body>
-  <div class="grid-container">
-    <header >
-      <div class="header"> 
-        <div>
-            <i class="fas fa-bars" title="Menu"></i>
-            <span class="path">Códigos / JavaScript</span>
-        </div>
-        <div></div>
-        <div></div>
-      </div>
-      <div >
-          <nav class="nav-bar">
-            <div class="icon-item">
-                <i class="fas fa-home"></i>
-                <span >Home </span>
-            </div>
-            <div class="icon-item icon-item-active">
-                <i class="fas fa-code"></i>
-                <span>Códigos</span>
-            </div>
-            <div class="icon-item">
-              <i class="fas fa-project-diagram"></i>
-                <span>Projetos</span>
-            </div>
-           
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sevensys.css?1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="icon.ico">
+    <title>Login</title>
+</head>
+<body style="background-image: linear-gradient(to bottom right, #0c2952, #435770);">
+    <div class="container">
+        <div class="login-box">
+            <form id="form-login" action="javascript:login()">
+                <div>
+                    <h2>Força de Vendas</h2>
+                </div>
+                <div>
+                    <input  type="email" name="P_EMAIL" placeholder="Informe seu endereço de e-mail" required>
+                </div>
+                <div>
+                    <input  type="password" name="P_SENHA" placeholder="Informe sua senha" required>
+                </div>
+                <div>
+                    <button style="margin-top:40px;" type="submit">Login</button>
+                </div> 
+                <div class="message-error" id="login-message"></div>
+            </form>
             
-          </nav>
-      </div>
-
-    </header>
-    <main class="content">
-         <nav class="nav-bar-list"> 
-              <div class="nav-bar-list-active">JavaScript</div>
-              <div>Alerts</div>
-              <div>Buttons</div>
-              <div>Forms</div>
-        </nav>
-        <div>
-            <div></div>
-            <div>
-                <div class="alert alert-success">
-                  <span class="alert-close" onclick="this.parentNode.style.display='none'">&times;</span>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <span>Sua mensagem de alerta aqui!</span>
-                </div>
-                <div class="alert alert-warning">
-                  <span class="alert-close" onclick="this.parentNode.style.display='none'">&times;</span>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <span>Sua mensagem de alerta aqui!</span>
-                </div>
-                <div class="alert alert-danger">
-                  <span class="alert-close" onclick="this.parentNode.style.display='none'">&times;</span>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <span>Sua mensagem de alerta aqui!</span>
-                </div>
-                <div class="alert alert-info">
-                  <span class="alert-close" onclick="this.parentNode.style.display='none'">&times;</span>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <span>Sua mensagem de alerta aqui!</span>
-                </div>
-            </div>
-            <div>text 3</div>
-            <div>text 4</div>
         </div>
-    </main>
-    <footer class="footer">© 2024 - Emiliano de Aguiar - Framework</footer>
-  </div>
+    </div>
 </body>
 </html>
-<script src="js/main.js"></script>
+<script src="js/salesforce.js"></script>
